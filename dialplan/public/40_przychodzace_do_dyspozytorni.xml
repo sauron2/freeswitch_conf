@@ -1,0 +1,9 @@
+<include>
+  <extension name="zewnetrzne przychodzace do dyspozytorni">
+    <condition field="destination_number" expression="^(4001)$">
+      <action application="set" data="domain_name=$${domain}"/>
+      <action application="transfer" data="4001 XML default"/>
+    </condition>
+  </extension>
+</include>
+
