@@ -1,0 +1,18 @@
+<configuration name="gsmopen.conf" description="GSMopen Configuration">
+  <global_settings>
+    <param name="debug" value="8"/>
+    <param name="dialplan" value="XML"/>
+    <param name="context" value="default"/>
+    <param name="hold-music" value="$${moh_uri}"/>
+    <param name="destination" value="5000"/>
+  </global_settings>
+
+  <per_interface_settings>
+    <interface id="1" name="gsm01">
+        <param name="destination" value="4051"/>
+        <param name="controldevice_name" value="/dev/gsm_orange_ctl"/>
+        <param name="controldevice_audio_name" value="/dev/gsm_orange_audio"/>
+    </interface>
+  </per_interface_settings>
+</configuration>
+

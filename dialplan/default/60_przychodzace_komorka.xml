@@ -1,0 +1,15 @@
+<include>
+    <extension name="przychodzace na komorke 1">
+        <condition field="destination_number" expression="^4051$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="set" data="originate_continue_on_timeout=true"/>
+            <action application="set" data="call_timeout=15"/>
+            <action application="export" data="skip_cdr_causes=LOSE_RACE"/>
+            <action application="bridge" data="${group_call(dyspozytornia@${domain_name}+A)}"/>
+            <action application="transfer" data="4051 XML default"/>
+            <action application="hangup"/>
+        </condition>
+    </extension>
+</include>
+

@@ -1,0 +1,9 @@
+<include>
+  <extension name="zewnetrzne przychodzace na komorke1">
+    <condition field="destination_number" expression="^(4051)$">
+      <action application="set" data="domain_name=$${domain}"/>
+      <action application="transfer" data="4051 XML default"/>
+    </condition>
+  </extension>
+</include>
+
