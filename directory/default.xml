@@ -38,6 +38,13 @@
 	</users>
       </group>
 
+      <group name="dyspozytornia">
+        <users>
+          <user id="1001" type="pointer"/>
+          <user id="1002" type="pointer"/>
+        </users>
+      </group>
+
       <group name="sales">
 	<users>
 	  <!--
