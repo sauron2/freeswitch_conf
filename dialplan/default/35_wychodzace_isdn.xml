@@ -1,0 +1,10 @@
+<include>
+    <extension name="isdn wychodzace">
+        <condition field="destination_number" expression="^(\d{5,})$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="bridge" data="freetdm/BRI1/a/$1"/>
+            <action application="bridge" data="freetdm/BRI2/a/$1"/>
+        </condition>
+    </extension>
+</include>

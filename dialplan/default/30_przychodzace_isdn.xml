@@ -1,0 +1,9 @@
+<include>
+    <extension name="przychodzace_isdn" >
+        <condition field="source" expression="mod_freetdm" >
+            <action application="set" data="domain_name=$${domain}"/>
+            <action application="set" data="transfer_ringback=$${pl-ring}"/>
+            <action application="transfer" data="4001 XML default"/>
+	</condition>
+    </extension>
+</include>

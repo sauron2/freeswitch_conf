@@ -134,6 +134,7 @@
     <!--<load module="mod_callcenter"/>-->
 
     <load module="mod_gsmopen"/>
+    <load module="mod_freetdm"/>
 
   </modules>
 </configuration>

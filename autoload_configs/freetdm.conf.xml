@@ -1,0 +1,45 @@
+<configuration name="freetdm.conf" description="FreeTDM Configuration">
+	
+	<settings>
+		<param name="debug" value="0"/>
+		<!--<param name="hold-music" value="$${moh_uri}"/>-->
+		<!-- Analog global options (they apply to all spans) 
+		     Remember you can only choose between either call-swap
+		     or 3-way, not both!
+		-->
+		<!--<param name="enable-analog-option" value="call-swap"/>-->
+		<!--<param name="enable-analog-option" value="3-way"/>-->
+		<!--
+		Refuse to load the module if there is configuration errors
+		Defaults to 'no'
+		-->
+		<!--<param name="fail-on-error" value="no"/>-->
+		<param name="sip_headers" value="true"/>
+	</settings>
+
+
+	<libpri_spans>
+		<span name="BRI1">
+			<param name="dialplan" value="XML"/>
+			<param name="context" value="default"/>
+			<param name="switch" value="euroisdn"/>
+			<param name="node" value="cpe"/>
+			<param name="opts" value="omit_redirecting_number"/>
+			<param name="dp" value="unknown"/>
+			<param name="debug" value="none"/>
+			<!-- <param name="debug"    value="q931_all"/> -->
+		</span>
+		<span name="BRI2">
+			<param name="dialplan" value="XML"/>
+			<param name="context" value="default"/>
+			<param name="switch" value="euroisdn"/>
+			<param name="node" value="cpe"/>
+			<param name="opts" value="omit_redirecting_number"/>
+			<param name="dp" value="unknown"/>
+			<param name="debug" value="none"/>
+			<!-- <param name="debug"    value="q931_all"/> -->
+		</span>
+	</libpri_spans>
+
+</configuration>
+
