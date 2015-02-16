@@ -5,5 +5,34 @@
       <action application="transfer" data="4001 XML default"/>
     </condition>
   </extension>
+
+  <extension name="toya-422080888">
+    <condition field="destination_number" expression="^(422080888)$">
+      <action application="set" data="domain_name=$${domain}"/>
+      <action application="transfer" data="1001 XML default"/>
+    </condition>
+  </extension>
+
+  <extension name="toya-426620575">
+    <condition field="destination_number" expression="^(426620575)$">
+      <action application="set" data="domain_name=$${domain}"/>
+      <action application="transfer" data="1002 XML default"/>
+    </condition>
+  </extension>
+
+  <extension name="toya-426620576">
+    <condition field="destination_number" expression="^(426620576)$">
+      <action application="set" data="domain_name=$${domain}"/>
+      <action application="transfer" data="1003 XML default"/>
+    </condition>
+  </extension>
+
+  <extension name="toya-422088888">
+    <condition field="destination_number" expression="^(422088888)$">
+      <action application="set" data="domain_name=$${domain}"/>
+      <action application="transfer" data="1004 XML default"/>
+    </condition>
+  </extension>
+
 </include>
 

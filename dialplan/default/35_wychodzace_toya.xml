@@ -1,0 +1,57 @@
+<include>
+    <extension name="wychodzace_1001">
+        <condition field="caller_id_number" expression="^1001$"/>
+        <condition field="destination_number" expression="^(\d{5,})$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="set" data="effective_caller_id_name=TaxiExpress"/>
+            <action application="set" data="effective_caller_id_number=422080888"/>
+            <action application="set" data="ringback=${pl-ring}"/>
+            <action application="bridge" data="{sip_cid_type=rpid}sofia/gateway/biztel.toya.net.pl/$1"/>
+        </condition>
+    </extension>
+    <extension name="wychodzace_1002">
+        <condition field="caller_id_number" expression="^1002$"/>
+        <condition field="destination_number" expression="^(\d{5,})$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="set" data="effective_caller_id_name=TaxiExpress"/>
+            <action application="set" data="effective_caller_id_number=426620575"/>
+            <action application="set" data="ringback=${pl-ring}"/>
+            <action application="bridge" data="{sip_cid_type=rpid}sofia/gateway/biztel.toya.net.pl/$1"/>
+        </condition>
+    </extension>
+    <extension name="wychodzace_1003">
+        <condition field="caller_id_number" expression="^1003$"/>
+        <condition field="destination_number" expression="^(\d{5,})$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="set" data="effective_caller_id_name=TaxiExpress"/>
+            <action application="set" data="effective_caller_id_number=426620576"/>
+            <action application="set" data="ringback=${pl-ring}"/>
+            <action application="bridge" data="{sip_cid_type=rpid}sofia/gateway/biztel.toya.net.pl/$1"/>
+        </condition>
+    </extension>
+    <extension name="wychodzace_1004">
+        <condition field="caller_id_number" expression="^1004$"/>
+        <condition field="destination_number" expression="^(\d{5,})$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="set" data="effective_caller_id_name=TaxiExpress"/>
+            <action application="set" data="effective_caller_id_number=422088888"/>
+            <action application="set" data="ringback=${pl-ring}"/>
+            <action application="bridge" data="{sip_cid_type=rpid}sofia/gateway/biztel.toya.net.pl/$1"/>
+        </condition>
+    </extension>
+    <extension name="wychodzace_1005">
+        <condition field="caller_id_number" expression="^1005$"/>
+        <condition field="destination_number" expression="^(\d{5,})$">
+            <action application="set" data="hangup_after_bridge=true"/>
+            <action application="set" data="continue_on_fail=true"/>
+            <action application="set" data="effective_caller_id_name=TaxiExpress"/>
+            <action application="set" data="effective_caller_id_number=422088888"/>
+            <action application="set" data="ringback=${pl-ring}"/>
+            <action application="bridge" data="{sip_cid_type=rpid}sofia/gateway/biztel.toya.net.pl/$1"/>
+        </condition>
+    </extension>
+</include>
